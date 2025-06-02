@@ -1,42 +1,13 @@
 name: Build ZMK firmware
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        board: [nice_nano_v2]
-        shield: [frost]
-
-    steps:
-      - name: Checkout ZMK
-        uses: actions/checkout@v3
-        with:
-          submodules: true
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget ninja-build gperf ccache dfu-util device-tree-compiler python3-pip
-          pip3 install west
-
-      - name: Initialize west
-        run: |
-          west init -l config
-          west update
-
-      - name: Export Zephyr CMake package
-        run: west zephyr-export
-
-      - name: Build firmware
-        run: |
-          west build -s zmk/app -d build/${{ matrix.shield }} -b ${{ matrix.board }} -- -DSHIELD=${{ matrix.shield }}
-          
-      - name: Upload firmware
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ matrix.shield }}-${{ matrix.board }}
-          path: build/${{ matrix.shield }}/zephyr/zmk.uf2
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      shield: "frost"
+      board: "nice_nano_v2"
