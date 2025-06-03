@@ -3,6 +3,6 @@ id: frost
 name: Frost
 type: shield
 url: https://github.com/ayaangrover/frost/
-requires: [nice!nano]
+requires: [nice_nano]
 features:
   - keys

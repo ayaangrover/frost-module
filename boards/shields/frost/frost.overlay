@@ -10,26 +10,26 @@
         wakeup-source;
         
         col-gpios
-            = <&pro_micro 0 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 1 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 2 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 3 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 4 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 5 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 6 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 7 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 8 GPIO_ACTIVE_HIGH>;
+            = <&gpio0 8 GPIO_ACTIVE_HIGH>   // P0.08
+            , <&gpio0 6 GPIO_ACTIVE_HIGH>   // P0.06
+            , <&gpio0 17 GPIO_ACTIVE_HIGH>  // P0.17
+            , <&gpio0 20 GPIO_ACTIVE_HIGH>  // P0.20
+            , <&gpio0 22 GPIO_ACTIVE_HIGH>  // P0.22
+            , <&gpio0 24 GPIO_ACTIVE_HIGH>  // P0.24
+            , <&gpio1 0 GPIO_ACTIVE_HIGH>   // P1.00
+            , <&gpio0 11 GPIO_ACTIVE_HIGH>  // P0.11
+            , <&gpio1 4 GPIO_ACTIVE_HIGH>;  // P1.04
             
         row-gpios
-            = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            = <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P1.06
+            , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P0.09
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.10
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.11
+            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.13
+            , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.15
+            , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P0.02
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.29
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // P0.31
     };
 
     default_transform: keymap_transform_0 {
