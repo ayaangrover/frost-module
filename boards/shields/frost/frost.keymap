@@ -63,7 +63,7 @@ keymap {
             /* Row 8 */
             &kp M     &kp COMMA &kp DOT   &kp SLASH &mt RIGHT_SHIFT UP  &kp PGDN  &kp LCTRL &kp LALT  &kp LGUI
             /* Row 9 */
-            &kp SPACE &kp RGUI  &mo 1     &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT &trans   &trans
+            &kp SPACE &kp RGUI  &mo 1     &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT &&trans   &&trans
         >;
     };
 
@@ -74,7 +74,7 @@ keymap {
             /* Row 2 */
             &kp F9    &kp F10   &kp F11   &kp F12   &kp DEL   &kp HOME  &kp UP    &kp PGUP  &kp PGDN
             /* Row 3 */
-            &kp LEFT  &kp DOWN  &kp RIGHT &trans   &kp END   &kp VOLU  &kp VOLD  &kp MUTE  &kp MPLY
+            &kp LEFT  &kp DOWN  &kp RIGHT &&trans   &kp END   &kp VOLU  &kp VOLD  &kp MUTE  &kp MPLY
             /* Row 4 */
             &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
             /* Row 5 */
