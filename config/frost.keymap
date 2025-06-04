@@ -69,17 +69,17 @@
                 /* Row 3 */
                 &kp LEFT  &kp DOWN  &kp RIGHT &trans    &kp END   &kp VOLU  &kp VOLD  &kp MUTE  &kp MPLY
                 /* Row 4 */
-                &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 /* Row 5 */
-                &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 /* Row 6 */
-                &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 /* Row 7 */
-                &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 /* Row 8 */
-                &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
                 /* Row 9 */
-                &trans   &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
             >;
         };
     };      
