@@ -19,17 +19,17 @@
 
         comma_semicolon {
             key-positions = <30 38>;  
-            bindings = <&kp COMMA &kp SEMI>;
+            bindings = <&kp COMMA>;
         };
 
         dot_colon {
             key-positions = <31 39>; 
-            bindings = <&kp DOT &kp COLON>;
+            bindings = <&kp DOT>;
         };
 
         shift_cap {
             key-positions = <7 16>;    
-            bindings = <&kp LEFT_SHIFT &caps_word>;
+            bindings = <&caps_word>;
         };
     };
 
