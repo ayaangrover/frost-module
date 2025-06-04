@@ -56,7 +56,7 @@
                 /* Row 8 */
                 &kp M     &kp COMMA &kp DOT   &kp SLASH &mt RIGHT_SHIFT UP  &kp PGDN  &kp LCTRL &kp LALT  &kp LGUI
                 /* Row 9 */
-                &kp SPACE &kp RGUI  &mo 1     &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT &&trans   &&trans
+                &kp SPACE &kp RGUI  &mo 1     &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT &trans   &trans
             >;
         };
 
@@ -83,4 +83,4 @@
             >;
         };
     };      
-};  
+};
