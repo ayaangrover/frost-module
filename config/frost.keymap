@@ -82,5 +82,5 @@
                 &kp ESC   &kp ESC   &kp ESC   &kp ESC   &kp ESC   &kp ESC   &kp ESC   &kp ESC   &kp ESC
             >;
         };
-    };      
+    };
 };
