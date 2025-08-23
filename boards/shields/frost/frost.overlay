@@ -12,8 +12,8 @@
         wakeup-source;
         
         col-gpios
-            = <&gpio0 8 GPIO_ACTIVE_HIGH>   // P0.08
-            , <&gpio0 6 GPIO_ACTIVE_HIGH>   // P0.06
+            = <&gpio0 6 GPIO_ACTIVE_HIGH>   // P0.08
+            , <&gpio0 8 GPIO_ACTIVE_HIGH>   // P0.06
             , <&gpio0 17 GPIO_ACTIVE_HIGH>  // P0.17
             , <&gpio0 20 GPIO_ACTIVE_HIGH>  // P0.20
             , <&gpio0 22 GPIO_ACTIVE_HIGH>  // P0.22
@@ -24,14 +24,14 @@
             
         row-gpios
             = <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P1.06
-            , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P0.09
-            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.10
-            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.11
-            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.13
-            , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.15
-            , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P0.02
-            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.29
-            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // P0.31
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P0.09
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.10
+            , <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.11
+            , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.13
+            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P1.15
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P0.02
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.29
+            , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // P0.31
     };
 
     default_transform: keymap_transform_0 {
